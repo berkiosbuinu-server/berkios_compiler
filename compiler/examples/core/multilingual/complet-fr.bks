@@ -1,0 +1,30 @@
+module "Gestion des ventes"
+type Article
+  nom: Texte
+  prix: Décimal
+fonction calculer_total(prix: Décimal, quantite: Entier) -> Décimal
+  retourner multiplier(prix, quantite)
+fonction principale() -> Entier
+  soit prix_unitaire: Décimal = 12.5
+  soit quantite: Entier = 3
+  soit total = calculer_total(prix_unitaire, quantite)
+  afficher "Total de la commande :"
+  afficher total
+  si total > 30
+    afficher "Une validation est nécessaire."
+  sinon
+    afficher "Commande standard."
+  soit nombres = [10, 20, 30]
+  soit somme_nombres = somme(nombres)
+  afficher somme_nombres
+  soit index = 0
+  tant que index < 2
+    afficher index
+    index = index + 1
+  essayer
+    soit quotient = diviser(total, 0)
+    afficher quotient
+  capturer erreur
+    afficher "Erreur contrôlée :"
+    afficher erreur
+  retourner 0

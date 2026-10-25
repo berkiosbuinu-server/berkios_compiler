@@ -1,0 +1,399 @@
+{
+  "code": "en",
+  "name": "english",
+  "names": [
+    "english",
+    "en"
+  ],
+  "stopwords": [
+    "the",
+    "a",
+    "an",
+    "of"
+  ],
+  "words": {
+    "LANGUAGE": [
+      "language"
+    ],
+    "APPLICATION": [
+      "application"
+    ],
+    "MODEL": [
+      "model"
+    ],
+    "INTERFACE": [
+      "interface"
+    ],
+    "RULE": [
+      "rule"
+    ],
+    "COMMAND": [
+      "command"
+    ],
+    "VERSION": [
+      "version"
+    ],
+    "APP_TYPE": [
+      "type"
+    ],
+    "AUTHOR": [
+      "author"
+    ],
+    "DESCRIPTION": [
+      "description"
+    ],
+    "PLATFORMS": [
+      "platforms",
+      "platform"
+    ],
+    "EDITION": [
+      "edition"
+    ],
+    "TYPE_INTERFACE": [
+      "interface"
+    ],
+    "TYPE_EXCEL": [
+      "excel"
+    ],
+    "TYPE_COMMAND": [
+      "command"
+    ],
+    "T_TEXT": [
+      "text"
+    ],
+    "T_INT": [
+      "whole number"
+    ],
+    "T_DECIMAL": [
+      "decimal number"
+    ],
+    "T_AMOUNT": [
+      "amount"
+    ],
+    "T_DATE": [
+      "date"
+    ],
+    "T_BOOL": [
+      "boolean"
+    ],
+    "C_UNIQUE": [
+      "unique"
+    ],
+    "C_REQUIRED": [
+      "required"
+    ],
+    "C_MIN": [
+      "minimum"
+    ],
+    "C_MAX": [
+      "maximum"
+    ],
+    "TITLE": [
+      "title"
+    ],
+    "SIZE": [
+      "size"
+    ],
+    "BACKGROUND": [
+      "background"
+    ],
+    "THEME": [
+      "theme"
+    ],
+    "DISPLAY": [
+      "display"
+    ],
+    "BY": [
+      "by"
+    ],
+    "THEME_LIGHT": [
+      "light"
+    ],
+    "THEME_DARK": [
+      "dark"
+    ],
+    "DISP_PAGE": [
+      "page"
+    ],
+    "DISP_MODAL": [
+      "modal"
+    ],
+    "DISP_DRAWER": [
+      "drawer"
+    ],
+    "W_BUTTON": [
+      "button"
+    ],
+    "W_LABEL": [
+      "label"
+    ],
+    "W_INPUT": [
+      "field"
+    ],
+    "W_CHECKBOX": [
+      "checkbox"
+    ],
+    "W_TABLE": [
+      "table"
+    ],
+    "W_PANEL": [
+      "panel"
+    ],
+    "POSITION": [
+      "position"
+    ],
+    "COLOR": [
+      "color"
+    ],
+    "TEXT_SIZE": [
+      "text size"
+    ],
+    "BOLD": [
+      "bold"
+    ],
+    "ALIGN": [
+      "alignment"
+    ],
+    "ALIGN_LEFT": [
+      "left"
+    ],
+    "ALIGN_CENTER": [
+      "center"
+    ],
+    "ALIGN_RIGHT": [
+      "right"
+    ],
+    "LAYOUT": [
+      "layout"
+    ],
+    "LAYOUT_ROW": [
+      "row"
+    ],
+    "LAYOUT_COLUMN": [
+      "column"
+    ],
+    "FORMAT": [
+      "format"
+    ],
+    "FMT_TEXT": [
+      "text"
+    ],
+    "FMT_EMAIL": [
+      "email"
+    ],
+    "FMT_NUMBER": [
+      "number"
+    ],
+    "FMT_DATE": [
+      "date"
+    ],
+    "FMT_TIME": [
+      "time"
+    ],
+    "FMT_PHONE": [
+      "phone"
+    ],
+    "FMT_URL": [
+      "url"
+    ],
+    "SOURCE": [
+      "source"
+    ],
+    "COLUMNS": [
+      "columns"
+    ],
+    "CELL": [
+      "cell"
+    ],
+    "SHEET": [
+      "sheet"
+    ],
+    "ON_CLICK": [
+      "when clicked"
+    ],
+    "A_OPEN": [
+      "open"
+    ],
+    "A_CLOSE": [
+      "close"
+    ],
+    "A_MESSAGE": [
+      "show message",
+      "message"
+    ],
+    "A_SHOW": [
+      "show"
+    ],
+    "A_HIDE": [
+      "hide"
+    ],
+    "A_TOGGLE": [
+      "toggle"
+    ],
+    "A_SUBMIT": [
+      "submit form"
+    ],
+    "A_RESET": [
+      "clear form"
+    ],
+    "A_REQUEST": [
+      "call"
+    ],
+    "A_READ_EXCEL": [
+      "read excel"
+    ],
+    "A_WRITE_EXCEL": [
+      "write excel"
+    ],
+    "IN": [
+      "into"
+    ],
+    "ARGUMENT": [
+      "argument"
+    ],
+    "OPTION": [
+      "option"
+    ],
+    "ACTION": [
+      "action"
+    ],
+    "DEFAULT": [
+      "default"
+    ],
+    "S_PRINT": [
+      "print"
+    ],
+    "S_ERROR": [
+      "print error"
+    ],
+    "S_EXIT": [
+      "exit with code",
+      "exit"
+    ],
+    "S_SET": [
+      "set"
+    ],
+    "S_IF": [
+      "if"
+    ],
+    "S_ELSE": [
+      "otherwise"
+    ],
+    "S_REPEAT": [
+      "repeat"
+    ],
+    "AS": [
+      "to"
+    ],
+    "THEN": [
+      "then"
+    ],
+    "TIMES": [
+      "times"
+    ],
+    "CONCAT": [
+      "and"
+    ],
+    "CMP_EQ": [
+      "is equal to"
+    ],
+    "CMP_NE": [
+      "is not equal to",
+      "is different from"
+    ],
+    "CMP_LT": [
+      "is less than"
+    ],
+    "CMP_GT": [
+      "is greater than"
+    ],
+    "CMP_LE": [
+      "is less than or equal to"
+    ],
+    "CMP_GE": [
+      "is greater than or equal to"
+    ],
+    "V_TRUE": [
+      "true"
+    ],
+    "V_FALSE": [
+      "false"
+    ]
+  },
+  "messages": {
+    "E_NO_LANGUAGE": "Language not found. Add « language english » as the first line, or configure it with: berkios --lg --en",
+    "E_LANGUAGE_VALUE": "Unknown language « {value} ». Available languages: {available}.",
+    "E_LANGUAGE_LINE": "The language declaration must be the first line of the file.",
+    "E_MIXED_LANGUAGE": "The word « {word} » is a keyword ({other}), but this file is in {lang}. One file = one language.",
+    "E_UNKNOWN_KEYWORD": "Unknown keyword: « {word} ».{hint}",
+    "E_HINT": " Did you mean « {suggestion} »?",
+    "E_TAB": "Tabs are not allowed: use 2 spaces per level.",
+    "E_INDENT": "Wrong indentation: use multiples of 2 spaces, without skipping a level.",
+    "E_CHAR": "Unexpected character « {char} ».",
+    "E_STRING": "Unterminated quoted text.",
+    "E_EXPECT_STRING": "A quoted text is expected here.",
+    "E_EXPECT_NAME": "A name is expected here.",
+    "E_EXPECT_NUMBER": "{count} number(s) expected here.",
+    "E_EXPECT_COLOR": "A color like #rrggbb is expected.",
+    "E_EXPECT_VALUE": "Expected one of: {values}.",
+    "E_EXPECT_COLON": "The « : » sign is expected after the field name.",
+    "E_EXPECT_TYPE": "A data type is expected (for example « text » or « whole number »).",
+    "E_EXTRA": "Unexpected text at the end of the line: « {text} ».",
+    "E_NO_CHILDREN_ALLOWED": "This block cannot contain indented lines.",
+    "E_NOT_YET": "« {word} » is not supported yet by this compiler version (v0.1).",
+    "E_NO_APPLICATION": "The file must contain an « application » block.",
+    "E_DUP_APPLICATION": "Only one « application » block is allowed per file.",
+    "E_NO_INTERFACE": "An application of this type must contain at least one interface.",
+    "E_NO_PAGE": "The first interface must be a page (not a modal window or a drawer).",
+    "E_DUP": "« {name} » already exists ({where}).",
+    "E_BAD_VERSION": "Invalid version « {value} »: use 1.0 or 1.0.0.",
+    "E_BAD_CELL": "Invalid cell address: « {value} » (example: B2 or A1:C10).",
+    "E_UNKNOWN_REF": "{what} not found: « {name} ».{hint}",
+    "E_UNKNOWN_COLUMN": "Model « {model} » has no field « {name} ».{hint}",
+    "E_EXCEL_ONLY": "This action only exists in an application of type excel.",
+    "E_EXCEL_CELL": "This button must be linked to a cell (line « cell B2 ») to read or write Excel.",
+    "E_ONE_ACTION": "Only one event with a single action per button in this version.",
+    "E_EDITION": "{edition} edition: {reason}",
+    "E_PROP_TWICE": "The property « {word} » is already set for this element.",
+    "W_OUTSIDE": "Component « {name} » extends beyond interface « {iface} » ({w}×{h}).",
+    "REASON_NO_TABLE": "the table component is not included.",
+    "REASON_MAX": "limit of {max} components exceeded ({count}).",
+    "LABEL_INTERFACE": "interface",
+    "LABEL_WIDGET": "component",
+    "LABEL_MODEL": "model",
+    "WHERE_FILE": "in this file",
+    "LANG_OF": "English",
+    "SEV_ERROR": "error",
+    "SEV_WARNING": "warning",
+    "E_UNKNOWN_FILE": "File not found: {file}",
+    "E_NO_COMMAND": "An application of type command must contain at least one command.",
+    "E_CLI_NO_UI": "An application of type command cannot contain an interface.",
+    "E_CLI_ONLY": "« command » blocks require « type command » in the application.",
+    "E_NO_ACTION": "Command « {name} » must contain an « action » block.",
+    "E_ELSE_ALONE": "« {word} » must directly follow an « {kw} » at the same level.",
+    "E_ASSIGN_PARAM": "« {name} » is an argument or an option: its value cannot be redefined.",
+    "E_BAD_DEFAULT": "The default value does not match the type ({type}).",
+    "E_EXPECT_EXPR": "A value or a calculation is expected here.",
+    "E_EXPECT_WORD": "The word « {word} » is expected here.",
+    "E_TRANSLATE_UNSAFE": "Cannot translate without changing the meaning: {detail}",
+    "LABEL_VARIABLE": "variable",
+    "R_USAGE": "Usage",
+    "R_COMMANDS": "Commands",
+    "R_ARGUMENTS": "Arguments",
+    "R_OPTIONS": "Options",
+    "R_DEFAULT": "default",
+    "R_REQUIRED": "required",
+    "R_HELP": "Help",
+    "R_UNKNOWN_COMMAND": "Unknown command: {name}.",
+    "R_MISSING_ARG": "Missing argument: {name}.",
+    "R_TOO_MANY": "Too many arguments: « {value} ».",
+    "R_UNKNOWN_OPTION": "Unknown option: {name}.",
+    "R_MISSING_VALUE": "Option {name} expects a value.",
+    "R_BAD_VALUE": "Invalid value for {name}: « {value} » ({type} expected).",
+    "R_NOT_NUMBER": "Cannot calculate: « {value} » is not a number.",
+    "R_NOT_BOOL": "« {value} » is neither true nor false.",
+    "R_DIV_ZERO": "Division by zero.",
+    "R_LOOP": "Too many repetitions (limit: {max} steps).",
+    "R_EXIT_CODE": "The exit code must be a whole number."
+  }
+}

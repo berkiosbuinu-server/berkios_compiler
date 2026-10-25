@@ -1,0 +1,49 @@
+langue français
+
+application "Outils"
+  type commande
+  version 1.0
+  description "Petits outils en ligne de commande"
+
+commande saluer
+  description "Dit bonjour"
+  argument nom : texte, obligatoire
+  option répétitions : nombre entier, par défaut 1
+  option fort : booléen
+  action
+    répéter répétitions fois
+      si fort alors
+        afficher "BONJOUR " et nom
+      sinon
+        afficher "Bonjour " et nom
+
+commande calculer
+  description "Applique une opération à deux nombres"
+  argument premier : nombre décimal, obligatoire
+  argument opération : texte, obligatoire
+  argument second : nombre décimal, obligatoire
+  action
+    si opération est égal à "+" alors
+      afficher premier + second
+    sinon
+      si opération est égal à "*" alors
+        afficher premier * second
+      sinon
+        si opération est égal à "/" alors
+          si second est égal à 0 alors
+            afficher une erreur "Division par zéro"
+            arrêter avec le code 1
+          afficher premier / second
+        sinon
+          afficher une erreur "Opération inconnue : " et opération
+          arrêter avec le code 2
+
+commande compter
+  description "Compte jusqu'à un nombre"
+  argument limite : nombre entier, obligatoire
+  action
+    définir total comme 0
+    répéter limite fois
+      définir total comme total + 1
+      afficher "Étape " et total et " sur " et limite
+    afficher "Terminé : " et (total * 2) et " points"

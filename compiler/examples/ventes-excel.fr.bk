@@ -1,0 +1,22 @@
+langue français
+
+application "Suivi des ventes"
+  type excel
+  version 1.0
+
+interface Tableau de bord
+  étiquette total "Total des ventes"
+    cellule B2
+    feuille "Ventes"
+  champ région "Région"
+    cellule B3
+    feuille "Ventes"
+    obligatoire
+  bouton lire "Lire dans Excel"
+    cellule B2
+    feuille "Ventes"
+    quand on clique : lire excel
+  bouton écrire "Écrire dans Excel"
+    cellule B3
+    feuille "Ventes"
+    quand on clique : écrire excel

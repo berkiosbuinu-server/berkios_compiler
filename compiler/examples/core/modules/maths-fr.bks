@@ -1,0 +1,6 @@
+module "Mathématiques"
+fonction doubler(nombre: Decimal) -> Decimal
+  retourner nombre * 2
+
+fonction calculer_remise(prix: Decimal, pourcentage: Decimal) -> Decimal
+  retourner prix * pourcentage / 100

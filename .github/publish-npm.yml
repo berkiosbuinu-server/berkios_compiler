@@ -1,0 +1,45 @@
+name: Publier berkios-code sur npm
+
+# Déclenchement : après avoir augmenté la version dans compiler/package.json ET compiler/src/cli.mjs (même numéro) :
+#   git tag compiler-v0.8.0 && git push origin compiler-v0.8.0
+# Prérequis : secret NPM_TOKEN (npmjs.com → Access Tokens, droit d'écriture sur le paquet).
+# Remarque : « --provenance » exige un dépôt public ; retirez-le si le dépôt est privé.
+on:
+  push:
+    tags:
+      - "compiler-v*"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: compiler
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.18"
+          registry-url: "https://registry.npmjs.org"
+      - name: Vérifier que le tag, package.json et la CLI ont la même version
+        run: |
+          PKG="$(node -p "require('./package.json').version")"
+          TAG="${GITHUB_REF_NAME#compiler-v}"
+          CLI="$(grep -oP 'const VERSION = "\K[^"]+' src/cli.mjs)"
+          echo "tag=$TAG package.json=$PKG cli=$CLI"
+          if [ "$PKG" != "$TAG" ] || [ "$PKG" != "$CLI" ]; then
+            echo "Versions différentes : alignez le tag, compiler/package.json et compiler/src/cli.mjs." >&2
+            exit 1
+          fi
+      - name: Régénérer les exemples du terrain de jeu
+        run: node scripts/build-web-examples.mjs
+      - name: Tests
+        run: npm test
+      - name: Publier
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

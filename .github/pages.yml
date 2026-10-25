@@ -1,0 +1,49 @@
+name: Terrain de jeu BERKIOS CODE (GitHub Pages)
+
+# Publie le terrain de jeu (compilateur + aperçu dans le navigateur) sur https://<compte>.github.io/<dépôt>/
+# À activer une fois : Settings → Pages → Source : « GitHub Actions ».
+on:
+  push:
+    branches: [main]
+    paths:
+      - "compiler/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.18"
+      - name: Tests du compilateur
+        working-directory: compiler
+        run: |
+          node scripts/build-web-examples.mjs
+          npm test
+      - name: Assembler le site (web/ et src/ côte à côte, comme dans le paquet npm)
+        run: |
+          mkdir -p _site
+          cp -r compiler/src compiler/web _site/
+          printf '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=web/"><a href="web/">BERKIOS CODE</a>\n' > _site/index.html
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

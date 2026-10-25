@@ -1,0 +1,7 @@
+module "Exemple"
+type Boite<T>
+  valeur: T
+fn main() -> Int
+  soit boite: Boite<Int> = Boite(42)
+  afficher boite.valeur
+  retourner boite.valeur

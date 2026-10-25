@@ -1,0 +1,14 @@
+module "Application de vente"
+importer "maths-fr.bks"
+
+fonction principale() -> Entier
+  soit prix = 125.0
+  soit pourcentage = 15.0
+  soit remise = calculer_remise(prix, pourcentage)
+  soit total = prix - remise
+  afficher "Remise :"
+  afficher remise
+  afficher "Total à payer :"
+  afficher total
+  afficher doubler(10)
+  retourner 0

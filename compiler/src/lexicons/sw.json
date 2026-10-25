@@ -1,0 +1,408 @@
+{
+  "code": "sw",
+  "name": "Kiswahili",
+  "names": [
+    "kiswahili",
+    "swahili",
+    "sw"
+  ],
+  "stopwords": [
+    "ya",
+    "na",
+    "kwa",
+    "katika",
+    "au",
+    "ni",
+    "kutoka",
+    "cha",
+    "la",
+    "wa",
+    "za",
+    "wa"
+  ],
+  "words": {
+    "LANGUAGE": [
+      "lugha"
+    ],
+    "APPLICATION": [
+      "programu"
+    ],
+    "MODEL": [
+      "mfano"
+    ],
+    "INTERFACE": [
+      "kiolesura"
+    ],
+    "RULE": [
+      "kanuni"
+    ],
+    "COMMAND": [
+      "amri"
+    ],
+    "VERSION": [
+      "toleo"
+    ],
+    "APP_TYPE": [
+      "aina"
+    ],
+    "AUTHOR": [
+      "mtunzi"
+    ],
+    "DESCRIPTION": [
+      "maelezo"
+    ],
+    "PLATFORMS": [
+      "majukwaa",
+      "jukwaa"
+    ],
+    "EDITION": [
+      "toleo la programu"
+    ],
+    "TYPE_INTERFACE": [
+      "kiolesura"
+    ],
+    "TYPE_EXCEL": [
+      "excel"
+    ],
+    "TYPE_COMMAND": [
+      "amri"
+    ],
+    "T_TEXT": [
+      "maandishi"
+    ],
+    "T_INT": [
+      "nambari kamili"
+    ],
+    "T_DECIMAL": [
+      "nambari ya desimali"
+    ],
+    "T_AMOUNT": [
+      "kiasi"
+    ],
+    "T_DATE": [
+      "tarehe"
+    ],
+    "T_BOOL": [
+      "booleani"
+    ],
+    "C_UNIQUE": [
+      "ya kipekee"
+    ],
+    "C_REQUIRED": [
+      "inahitajika"
+    ],
+    "C_MIN": [
+      "kima cha chini"
+    ],
+    "C_MAX": [
+      "kima cha juu"
+    ],
+    "TITLE": [
+      "kichwa"
+    ],
+    "SIZE": [
+      "ukubwa"
+    ],
+    "BACKGROUND": [
+      "mandharinyuma"
+    ],
+    "THEME": [
+      "mandhari"
+    ],
+    "DISPLAY": [
+      "onyesha"
+    ],
+    "BY": [
+      "kwa"
+    ],
+    "THEME_LIGHT": [
+      "nyepesi"
+    ],
+    "THEME_DARK": [
+      "nyeusi"
+    ],
+    "DISP_PAGE": [
+      "ukurasa"
+    ],
+    "DISP_MODAL": [
+      "modal"
+    ],
+    "DISP_DRAWER": [
+      "paneli ya pembeni"
+    ],
+    "W_BUTTON": [
+      "kitufe"
+    ],
+    "W_LABEL": [
+      "lebo"
+    ],
+    "W_INPUT": [
+      "sehemu"
+    ],
+    "W_CHECKBOX": [
+      "kisanduku cha tiki"
+    ],
+    "W_TABLE": [
+      "jedwali"
+    ],
+    "W_PANEL": [
+      "paneli"
+    ],
+    "POSITION": [
+      "nafasi"
+    ],
+    "COLOR": [
+      "rangi"
+    ],
+    "TEXT_SIZE": [
+      "ukubwa wa maandishi"
+    ],
+    "BOLD": [
+      "herufi nzito"
+    ],
+    "ALIGN": [
+      "upangaji"
+    ],
+    "ALIGN_LEFT": [
+      "kushoto"
+    ],
+    "ALIGN_CENTER": [
+      "katikati"
+    ],
+    "ALIGN_RIGHT": [
+      "kulia"
+    ],
+    "LAYOUT": [
+      "mpangilio"
+    ],
+    "LAYOUT_ROW": [
+      "safu"
+    ],
+    "LAYOUT_COLUMN": [
+      "nguzo"
+    ],
+    "FORMAT": [
+      "umbizo"
+    ],
+    "FMT_TEXT": [
+      "maandishi"
+    ],
+    "FMT_EMAIL": [
+      "barua pepe"
+    ],
+    "FMT_NUMBER": [
+      "nambari"
+    ],
+    "FMT_DATE": [
+      "tarehe"
+    ],
+    "FMT_TIME": [
+      "muda"
+    ],
+    "FMT_PHONE": [
+      "simu"
+    ],
+    "FMT_URL": [
+      "url"
+    ],
+    "SOURCE": [
+      "chanzo"
+    ],
+    "COLUMNS": [
+      "nguzo"
+    ],
+    "CELL": [
+      "sela"
+    ],
+    "SHEET": [
+      "karatasi"
+    ],
+    "ON_CLICK": [
+      "unapobofya"
+    ],
+    "A_OPEN": [
+      "fungua"
+    ],
+    "A_CLOSE": [
+      "funga"
+    ],
+    "A_MESSAGE": [
+      "onyesha ujumbe",
+      "ujumbe"
+    ],
+    "A_SHOW": [
+      "onyesha"
+    ],
+    "A_HIDE": [
+      "ficha"
+    ],
+    "A_TOGGLE": [
+      "badilisha"
+    ],
+    "A_SUBMIT": [
+      "tuma fomu"
+    ],
+    "A_RESET": [
+      "safisha fomu"
+    ],
+    "A_REQUEST": [
+      "ita"
+    ],
+    "A_READ_EXCEL": [
+      "soma excel"
+    ],
+    "A_WRITE_EXCEL": [
+      "andika excel"
+    ],
+    "IN": [
+      "ndani ya"
+    ],
+    "ARGUMENT": [
+      "hoja"
+    ],
+    "OPTION": [
+      "chaguo"
+    ],
+    "ACTION": [
+      "kitendo"
+    ],
+    "DEFAULT": [
+      "chaguomsingi"
+    ],
+    "S_PRINT": [
+      "chapisha"
+    ],
+    "S_ERROR": [
+      "chapisha kosa"
+    ],
+    "S_EXIT": [
+      "ondoka kwa msimbo",
+      "ondoka"
+    ],
+    "S_SET": [
+      "weka"
+    ],
+    "S_IF": [
+      "ikiwa"
+    ],
+    "S_ELSE": [
+      "vinginevyo"
+    ],
+    "S_REPEAT": [
+      "rudia"
+    ],
+    "AS": [
+      "kwa"
+    ],
+    "THEN": [
+      "basi"
+    ],
+    "TIMES": [
+      "mara"
+    ],
+    "CONCAT": [
+      "na"
+    ],
+    "CMP_EQ": [
+      "ni sawa na"
+    ],
+    "CMP_NE": [
+      "si sawa na",
+      "ni tofauti na"
+    ],
+    "CMP_LT": [
+      "ni chini ya"
+    ],
+    "CMP_GT": [
+      "ni zaidi ya"
+    ],
+    "CMP_LE": [
+      "ni chini au sawa na"
+    ],
+    "CMP_GE": [
+      "ni zaidi au sawa na"
+    ],
+    "V_TRUE": [
+      "kweli"
+    ],
+    "V_FALSE": [
+      "siyo"
+    ]
+  },
+  "messages": {
+    "E_NO_LANGUAGE": "Language not found. Add « language english » as the first line, or configure it with: berkios --lg --en",
+    "E_LANGUAGE_VALUE": "Unknown language « {value} ». Available languages: {available}.",
+    "E_LANGUAGE_LINE": "The language declaration must be the first line of the file.",
+    "E_MIXED_LANGUAGE": "The word « {word} » is a keyword ({other}), but this file is in {lang}. One file = one language.",
+    "E_UNKNOWN_KEYWORD": "Unknown keyword: « {word} ».{hint}",
+    "E_HINT": " Did you mean « {suggestion} »?",
+    "E_TAB": "Tabs are not allowed: use 2 spaces per level.",
+    "E_INDENT": "Wrong indentation: use multiples of 2 spaces, without skipping a level.",
+    "E_CHAR": "Unexpected character « {char} ».",
+    "E_STRING": "Unterminated quoted text.",
+    "E_EXPECT_STRING": "A quoted text is expected here.",
+    "E_EXPECT_NAME": "A name is expected here.",
+    "E_EXPECT_NUMBER": "{count} number(s) expected here.",
+    "E_EXPECT_COLOR": "A color like #rrggbb is expected.",
+    "E_EXPECT_VALUE": "Expected one of: {values}.",
+    "E_EXPECT_COLON": "The « : » sign is expected after the field name.",
+    "E_EXPECT_TYPE": "A data type is expected (for example « text » or « whole number »).",
+    "E_EXTRA": "Unexpected text at the end of the line: « {text} ».",
+    "E_NO_CHILDREN_ALLOWED": "This block cannot contain indented lines.",
+    "E_NOT_YET": "« {word} » is not supported yet by this compiler version (v0.1).",
+    "E_NO_APPLICATION": "The file must contain an « application » block.",
+    "E_DUP_APPLICATION": "Only one « application » block is allowed per file.",
+    "E_NO_INTERFACE": "An application of this type must contain at least one interface.",
+    "E_NO_PAGE": "The first interface must be a page (not a modal window or a drawer).",
+    "E_DUP": "« {name} » already exists ({where}).",
+    "E_BAD_VERSION": "Invalid version « {value} »: use 1.0 or 1.0.0.",
+    "E_BAD_CELL": "Invalid cell address: « {value} » (example: B2 or A1:C10).",
+    "E_UNKNOWN_REF": "{what} not found: « {name} ».{hint}",
+    "E_UNKNOWN_COLUMN": "Model « {model} » has no field « {name} ».{hint}",
+    "E_EXCEL_ONLY": "This action only exists in an application of type excel.",
+    "E_EXCEL_CELL": "This button must be linked to a cell (line « cell B2 ») to read or write Excel.",
+    "E_ONE_ACTION": "Only one event with a single action per button in this version.",
+    "E_EDITION": "{edition} edition: {reason}",
+    "E_PROP_TWICE": "The property « {word} » is already set for this element.",
+    "W_OUTSIDE": "Component « {name} » extends beyond interface « {iface} » ({w}×{h}).",
+    "REASON_NO_TABLE": "the table component is not included.",
+    "REASON_MAX": "limit of {max} components exceeded ({count}).",
+    "LABEL_INTERFACE": "interface",
+    "LABEL_WIDGET": "component",
+    "LABEL_MODEL": "model",
+    "WHERE_FILE": "in this file",
+    "LANG_OF": "English",
+    "SEV_ERROR": "error",
+    "SEV_WARNING": "warning",
+    "E_UNKNOWN_FILE": "File not found: {file}",
+    "E_NO_COMMAND": "An application of type command must contain at least one command.",
+    "E_CLI_NO_UI": "An application of type command cannot contain an interface.",
+    "E_CLI_ONLY": "« command » blocks require « type command » in the application.",
+    "E_NO_ACTION": "Command « {name} » must contain an « action » block.",
+    "E_ELSE_ALONE": "« {word} » must directly follow an « {kw} » at the same level.",
+    "E_ASSIGN_PARAM": "« {name} » is an argument or an option: its value cannot be redefined.",
+    "E_BAD_DEFAULT": "The default value does not match the type ({type}).",
+    "E_EXPECT_EXPR": "A value or a calculation is expected here.",
+    "E_EXPECT_WORD": "The word « {word} » is expected here.",
+    "E_TRANSLATE_UNSAFE": "Cannot translate without changing the meaning: {detail}",
+    "LABEL_VARIABLE": "variable",
+    "R_USAGE": "Usage",
+    "R_COMMANDS": "Commands",
+    "R_ARGUMENTS": "Arguments",
+    "R_OPTIONS": "Options",
+    "R_DEFAULT": "default",
+    "R_REQUIRED": "required",
+    "R_HELP": "Help",
+    "R_UNKNOWN_COMMAND": "Unknown command: {name}.",
+    "R_MISSING_ARG": "Missing argument: {name}.",
+    "R_TOO_MANY": "Too many arguments: « {value} ».",
+    "R_UNKNOWN_OPTION": "Unknown option: {name}.",
+    "R_MISSING_VALUE": "Option {name} expects a value.",
+    "R_BAD_VALUE": "Invalid value for {name}: « {value} » ({type} expected).",
+    "R_NOT_NUMBER": "Cannot calculate: « {value} » is not a number.",
+    "R_NOT_BOOL": "« {value} » is neither true nor false.",
+    "R_DIV_ZERO": "Division by zero.",
+    "R_LOOP": "Too many repetitions (limit: {max} steps).",
+    "R_EXIT_CODE": "The exit code must be a whole number."
+  }
+}

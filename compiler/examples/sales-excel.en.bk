@@ -1,0 +1,18 @@
+language english
+
+application "Sales tracker"
+  type excel
+  version 1.0
+
+interface Dashboard
+  label total "Total sales"
+    cell B2
+    sheet "Sales"
+  field region "Region"
+    cell B3
+    sheet "Sales"
+    required
+  button read "Read from Excel"
+    cell B2
+    sheet "Sales"
+    when clicked : read excel

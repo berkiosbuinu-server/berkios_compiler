@@ -1,0 +1,16 @@
+module "Services"
+
+interface Rechargeable
+  fn recharger(quantite: Int) -> Int
+
+class Batterie implements Rechargeable
+  niveau: Int
+
+  fn recharger(quantite: Int) -> Int
+    self.niveau = self.niveau + quantite
+    retourner self.niveau
+
+fn main() -> Int
+  soit batterie = Batterie(10)
+  afficher batterie.recharger(5)
+  retourner 0

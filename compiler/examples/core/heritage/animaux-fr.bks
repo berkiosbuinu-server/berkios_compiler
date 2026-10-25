@@ -1,0 +1,28 @@
+module "Animaux et héritage"
+
+class Animal
+  nom: Text
+
+  fn parler() -> Text
+    retourner "..."
+
+class Chien extends Animal
+  race: Text
+
+  fn parler() -> Text
+    retourner "Wouf !"
+
+class Chat extends Animal
+  couleur: Text
+
+  fn parler() -> Text
+    retourner "Miaou !"
+
+fn main() -> Int
+  soit chien = Chien("Rex", "Berger")
+  soit chat = Chat("Minou", "Noir")
+  afficher chien.nom
+  afficher chien.parler()
+  afficher chat.nom
+  afficher chat.parler()
+  retourner 0

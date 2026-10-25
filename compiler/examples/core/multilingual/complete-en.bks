@@ -1,0 +1,30 @@
+module "Sales management"
+type Item
+  name: Text
+  price: Decimal
+fn calculate_total(price: Decimal, quantity: Int) -> Decimal
+  return multiply(price, quantity)
+fn main() -> Int
+  let unit_price: Decimal = 12.5
+  let quantity: Int = 3
+  let total = calculate_total(unit_price, quantity)
+  print "Order total:"
+  print total
+  if total > 30
+    print "Approval is required."
+  else
+    print "Standard order."
+  let numbers = [10, 20, 30]
+  let numbers_sum = sum(numbers)
+  print numbers_sum
+  let index = 0
+  while index < 2
+    print index
+    index = index + 1
+  try
+    let quotient = divide(total, 0)
+    print quotient
+  catch error
+    print "Handled error:"
+    print error
+  return 0

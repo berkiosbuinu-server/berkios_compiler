@@ -1,0 +1,50 @@
+language english
+
+application "Outils"
+  version 1.0
+  description "Petits outils en ligne de commande"
+  type command
+  edition pro
+
+command saluer
+  description "Dit bonjour"
+  argument nom : text, required
+  option répétitions : whole number, default 1
+  option fort : boolean
+  action
+    repeat répétitions times
+      if fort then
+        print "BONJOUR " and nom
+      otherwise
+        print "Bonjour " and nom
+
+command calculer
+  description "Applique une opération à deux nombres"
+  argument premier : decimal number, required
+  argument opération : text, required
+  argument second : decimal number, required
+  action
+    if opération is equal to "+" then
+      print premier + second
+    otherwise
+      if opération is equal to "*" then
+        print premier * second
+      otherwise
+        if opération is equal to "/" then
+          if second is equal to 0 then
+            print error "Division par zéro"
+            exit with code 1
+          print premier / second
+        otherwise
+          print error "Opération inconnue : " and opération
+          exit with code 2
+
+command compter
+  description "Compte jusqu'à un nombre"
+  argument limite : whole number, required
+  action
+    set total to 0
+    repeat limite times
+      set total to total + 1
+      print "Étape " and total and " sur " and limite
+    print "Terminé : " and total * 2 and " points"

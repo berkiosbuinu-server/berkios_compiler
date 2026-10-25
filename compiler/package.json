@@ -1,0 +1,49 @@
+{
+  "name": "berkios-code",
+  "version": "0.8.0",
+  "description": "BERKIOS CODE : langage déclaratif multilingue (français, anglais, espagnol, swahili) pour créer des interfaces, des modèles de données et des outils en ligne de commande, avec aperçu dans le navigateur. / Multilingual declarative language with browser preview.",
+  "keywords": ["berkios", "langage", "language", "dsl", "compiler", "compilateur", "français", "french", "multilingual", "low-code", "cli", "playground"],
+  "license": "MIT",
+  "author": "Berkios",
+  "homepage": "https://github.com/berkiosbuinu-server/berkios_compiler#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berkiosbuinu-server/berkios_compiler.git",
+    "directory": "compiler"
+  },
+  "bugs": {
+    "url": "https://github.com/berkiosbuinu-server/berkios_compiler/issues"
+  },
+  "type": "module",
+  "bin": {
+    "berkios": "./bin/berkios.mjs"
+  },
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./browser": "./src/browser.mjs",
+    "./web": "./web/berkios-web.mjs",
+    "./web/*": "./web/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin",
+    "src",
+    "web",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --experimental-strip-types --test \"tests/*.test.mjs\"",
+    "berkios": "node bin/berkios.mjs",
+    "build:web": "node scripts/build-web-examples.mjs",
+    "prepublishOnly": "node scripts/build-web-examples.mjs && npm test"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

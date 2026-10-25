@@ -1,0 +1,14 @@
+module "Fonctions génériques"
+
+fn identite<T>(valeur: T) -> T
+  retourner valeur
+
+fn premier<T>(valeurs: List<T>) -> T
+  retourner valeurs[0]
+
+fn main() -> Int
+  soit entier: Int = identite(42)
+  soit message: Text = identite("Bonjour BERKIOS")
+  afficher message
+  afficher premier([entier, 7])
+  retourner 0

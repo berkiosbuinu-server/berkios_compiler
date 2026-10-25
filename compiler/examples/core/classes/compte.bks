@@ -1,0 +1,20 @@
+module "Comptes"
+
+class Compte
+  titulaire: Text
+  solde: Int
+
+  fn deposer(montant: Int) -> Int
+    self.solde = self.solde + montant
+    retourner self.solde
+
+  fn retirer(montant: Int) -> Int
+    self.solde = self.solde - montant
+    retourner self.solde
+
+fn main() -> Int
+  soit compte = Compte("Amina", 100)
+  afficher compte.deposer(50)
+  afficher compte.retirer(20)
+  afficher compte.solde
+  retourner 0

@@ -1,0 +1,30 @@
+modulo "Gestión de ventas"
+tipo Articulo
+  nombre: Texto
+  precio: Decimal
+funcion calcular_total(precio: Decimal, cantidad: Entero) -> Decimal
+  retornar multiplicar(precio, cantidad)
+funcion principal() -> Entero
+  sea precio_unitario: Decimal = 12.5
+  sea cantidad: Entero = 3
+  sea total = calcular_total(precio_unitario, cantidad)
+  mostrar "Total del pedido:"
+  mostrar total
+  si total > 30
+    mostrar "Se requiere aprobación."
+  sino
+    mostrar "Pedido estándar."
+  sea numeros = [10, 20, 30]
+  sea suma_numeros = suma(numeros)
+  mostrar suma_numeros
+  sea indice = 0
+  mientras indice < 2
+    mostrar indice
+    indice = indice + 1
+  intentar
+    sea cociente = dividir(total, 0)
+    mostrar cociente
+  capturar error
+    mostrar "Error controlado:"
+    mostrar error
+  retornar 0

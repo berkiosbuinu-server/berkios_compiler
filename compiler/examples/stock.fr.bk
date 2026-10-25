@@ -1,0 +1,48 @@
+langue français
+
+application "Gestion de stock"
+  version 1.0
+  auteur "BERKIOS"
+  description "Suivi simple des produits"
+  type interface
+  plateformes windows, macos, linux, android
+  édition pro
+
+modèle Produit
+  sku : texte, unique, obligatoire
+  nom : texte, obligatoire
+  quantité : nombre entier, minimum 0
+  prix : montant
+
+interface Accueil
+  titre "Produits en stock"
+  taille 1280 sur 720
+  fond #f8fafc
+
+  panneau en-tête
+    disposition ligne
+    étiquette titre "Produits en stock"
+      taille du texte 26
+      gras
+    bouton ajouter "Ajouter un produit"
+      quand on clique : ouvrir Formulaire produit
+
+  tableau liste
+    source : Produit
+    colonnes : sku, nom, quantité, prix
+
+interface Formulaire produit
+  affichage modale
+  titre "Nouveau produit"
+
+  champ sku "Référence"
+    obligatoire
+  champ nom "Nom du produit"
+    obligatoire
+  champ quantité "Quantité"
+    format nombre
+    minimum 0
+  bouton enregistrer "Enregistrer"
+    quand on clique : envoyer le formulaire
+  bouton annuler "Annuler"
+    quand on clique : fermer

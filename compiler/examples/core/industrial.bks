@@ -1,0 +1,21 @@
+// BERKIOS Core — typed functions, collections, and recoverable errors.
+module "Industrial telemetry"
+
+type SensorReading
+  sensor_id: Text
+  temperature: Float
+  valid: Bool
+
+fn average(values: List<Float>) -> Float
+  let total: Float = sum(values)
+  return total / len(values)
+
+fn main() -> Int
+  let samples: List<Float> = [21.4, 22.1, 21.9]
+  let mean: Float = average(samples)
+  print "Average temperature: " + mean
+  try
+    raise "Sensor calibration unavailable"
+  catch problem
+    print "Recoverable fault: " + problem
+  return 0

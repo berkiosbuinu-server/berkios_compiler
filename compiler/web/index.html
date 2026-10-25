@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BERKIOS CODE — Terrain de jeu</title>
+<meta name="description" content="Écrivez en français, anglais, espagnol ou swahili et voyez votre application fonctionner dans le navigateur, sans rien installer.">
+<link rel="stylesheet" href="./berkios-web.css">
+<link rel="stylesheet" href="./playground.css">
+</head>
+<body>
+<header class="pg-head">
+  <h1>BERKIOS <span>CODE</span></h1>
+  <label class="pg-field"><span data-i18n="example">Exemple</span>
+    <select id="examples"></select></label>
+  <label class="pg-field"><span data-i18n="translate">Traduire en</span>
+    <select id="translate"></select></label>
+  <span class="pg-spacer"></span>
+  <button id="share" type="button" data-i18n="share">Copier le lien</button>
+  <button id="dl-bk" type="button" data-i18n="dlBk">Télécharger .bk</button>
+  <button id="dl-json" type="button" data-i18n="dlJson" hidden>Télécharger .berkios.json</button>
+  <button id="lang" type="button" aria-label="Language">EN</button>
+</header>
+<main class="pg-main">
+  <section class="pg-left" aria-label="Code">
+    <textarea id="code" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="Code BERKIOS"></textarea>
+    <div id="status" class="pg-status" role="status"></div>
+    <ul id="diags" class="pg-diags" aria-live="polite"></ul>
+  </section>
+  <section class="pg-right">
+    <div class="pg-tabs" role="tablist">
+      <button role="tab" id="tab-preview" aria-controls="panel-preview" aria-selected="true" data-i18n="tabPreview">Aperçu</button>
+      <button role="tab" id="tab-console" aria-controls="panel-console" aria-selected="false" data-i18n="tabConsole">Console</button>
+      <button role="tab" id="tab-json" aria-controls="panel-json" aria-selected="false" data-i18n="tabJson">JSON</button>
+    </div>
+    <div id="panel-preview" class="pg-panel" role="tabpanel" aria-labelledby="tab-preview"><div id="app"></div></div>
+    <div id="panel-console" class="pg-panel" role="tabpanel" aria-labelledby="tab-console" hidden>
+      <form id="cli" class="pg-cli" hidden>
+        <label>berkios <input id="cli-args" type="text" autocomplete="off" spellcheck="false" aria-label="Arguments"></label>
+        <button type="submit" data-i18n="run">Exécuter</button>
+        <button type="button" id="cli-help" data-i18n="help">Aide</button>
+      </form>
+      <pre id="out" class="pg-out"></pre>
+    </div>
+    <div id="panel-json" class="pg-panel" role="tabpanel" aria-labelledby="tab-json" hidden><pre id="json" class="pg-out"></pre></div>
+  </section>
+</main>
+<script type="module" src="./playground.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+language english
+
+application "Greeter"
+  type command
+  version 2.0
+  description "Greets people"
+
+command greet
+  description "Greets someone"
+  argument name : text, required
+  option count : whole number, default 1
+  action
+    repeat count times
+      print "Hello " and name

@@ -1,0 +1,30 @@
+moduli "Usimamizi wa mauzo"
+aina Bidhaa
+  jina: Maandishi
+  bei: Desimali
+kazi hesabu_jumla(bei: Desimali, kiasi: Nambari) -> Desimali
+  rudisha kuzidisha(bei, kiasi)
+kazi kuu() -> Nambari
+  acha bei_kila_moja: Desimali = 12.5
+  acha kiasi: Nambari = 3
+  acha jumla = hesabu_jumla(bei_kila_moja, kiasi)
+  onyesha "Jumla ya agizo:"
+  onyesha jumla
+  ikiwa jumla > 30
+    onyesha "Idhini inahitajika."
+  vinginevyo
+    onyesha "Agizo la kawaida."
+  acha nambari = [10, 20, 30]
+  acha jumla_nambari = jumlisha(nambari)
+  onyesha jumla_nambari
+  acha faharasa = 0
+  wakati faharasa < 2
+    onyesha faharasa
+    faharasa = faharasa + 1
+  jaribu
+    acha mgawo = gawanya(jumla, 0)
+    onyesha mgawo
+  kamata kosa
+    onyesha "Hitilafu imeshughulikiwa:"
+    onyesha kosa
+  rudisha 0
