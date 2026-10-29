@@ -1,0 +1,19 @@
+Repository description:
+BERKIOS CODE multilingual declarative language (.bk), compiler and browser playground; BERKIOS Core (.bks) typed language is separate and evolving.
+
+Website:
+https://graphic.berkios.online/
+
+Suggested topics (choose only accurate ones):
+berkios
+programming-language
+compiler
+developer-tools
+domain-specific-language
+dsl
+declarative-language
+low-code
+multilingual
+playground
+
+Do not claim native support by ChatGPT, Claude or Gemini unless a verified integration exists.
