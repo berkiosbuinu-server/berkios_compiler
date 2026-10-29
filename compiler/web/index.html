@@ -19,6 +19,7 @@
   <button id="share" type="button" data-i18n="share">Copier le lien</button>
   <button id="dl-bk" type="button" data-i18n="dlBk">Télécharger .bk</button>
   <button id="dl-json" type="button" data-i18n="dlJson" hidden>Télécharger .berkios.json</button>
+  <button id="berkios-ai-toggle" type="button" aria-expanded="false">✦ Berkios AI</button>
   <button id="lang" type="button" aria-label="Language">EN</button>
 </header>
 <main class="pg-main">
@@ -44,7 +45,24 @@
     </div>
     <div id="panel-json" class="pg-panel" role="tabpanel" aria-labelledby="tab-json" hidden><pre id="json" class="pg-out"></pre></div>
   </section>
+  <section id="berkios-ai-panel" class="bkai-panel" aria-label="Berkios AI" hidden>
+    <div class="bkai-head">
+      <div><strong>✦ Berkios AI</strong><p>Assistant spécialisé BERKIOS CODE (.bk) et BERKIOS Core (.bks)</p></div>
+      <button id="berkios-ai-close" type="button" aria-label="Fermer Berkios AI">×</button>
+    </div>
+    <label for="berkios-ai-prompt">Que voulez-vous créer, corriger ou comprendre ?</label>
+    <textarea id="berkios-ai-prompt" rows="3" placeholder="Ex. : corrige les erreurs de ce code et explique les changements."></textarea>
+    <div class="bkai-actions">
+      <label class="bkai-context"><input id="berkios-ai-include-code" type="checkbox" checked> Inclure le code ouvert</label>
+      <button id="berkios-ai-send" type="button">Envoyer à Berkios AI</button>
+    </div>
+    <p id="berkios-ai-status" role="status"></p>
+    <pre id="berkios-ai-answer" aria-live="polite"></pre>
+    <button id="berkios-ai-apply" type="button" hidden>Remplacer le code par la proposition</button>
+  </section>
 </main>
+<link rel="stylesheet" href="./berkios-ai.css">
 <script type="module" src="./playground.mjs"></script>
+<script type="module" src="./berkios-ai.mjs"></script>
 </body>
 </html>
